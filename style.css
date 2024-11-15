@@ -108,6 +108,7 @@ body {
   justify-content: center;
   gap: 1rem;
   padding: 1rem;
+  align-items: center;
 }
 
 .featurebutton {
@@ -135,12 +136,108 @@ body {
   background: linear-gradient(45deg, #fd79a8, #ff7675);
   box-shadow: 0px 0px 10px yellow;
 }
+
 a {
   text-decoration: none;
   color: rgb(236, 248, 3);
   font-size: 1.5rem;
   font-weight: bold;
 }
-a:hover{
-    color: red;
+
+a:hover {
+  color: red;
+}
+
+/* Mobile Responsiveness */
+
+/* For Tablets and Smaller Devices */
+@media (max-width: 768px) {
+  html {
+    font-size: 14px; /* slightly larger font on tablets */
+  }
+
+  .section-box {
+    width: 80%;
+  }
+
+  .featurebutton {
+    display: flex;
+    font-size: 0.9rem;
+    padding: 0.8rem 1.5rem;
+  }
+
+  #homepage p,
+  #aboutus p,
+  #roadmap p,
+  #team p {
+    font-size: 1rem;
+  }
+
+  #menucontainer {
+    flex-direction: row;
+    gap: 0.5rem;
+  }
+
+  .video-container {
+    width: 50%;
+  }
+
+  .video {
+    width: 100%;
+  }
+
+  #roadmap ul li {
+    font-size: 1rem;
+  }
+
+  a {
+    font-size: 1.2rem;
+  }
+}
+
+/* For Phones */
+@media (max-width: 480px) {
+  html {
+    font-size: 12px; /* smaller font for small screens */
+  }
+
+  .section-box {
+    width: 90%;
+    padding: 1.5rem;
+  }
+
+  .featurebutton {
+    font-size: 0.8rem;
+    padding: 0.7rem 1.2rem;
+  }
+
+  #homepage p,
+  #aboutus p,
+  #roadmap p,
+  #team p {
+    font-size: 0.9rem;
+  }
+
+  #menucontainer {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem;
+  }
+
+  .video-container {
+    width: 60%;
+  }
+
+  .video {
+    width: 100%;
+    border-radius: 50%;
+  }
+
+  #roadmap ul li {
+    font-size: 0.9rem;
+  }
+
+  a {
+    font-size: 1rem;
+  }
 }
