@@ -137,7 +137,10 @@ body {
 }
 a {
   text-decoration: none;
-  color: black;
+  color: rgb(236, 248, 3);
   font-size: 1.5rem;
   font-weight: bold;
+}
+a:hover{
+    color: red;
 }
