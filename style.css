@@ -1,0 +1,143 @@
+/* General Styles */
+html {
+  font-size: 15px;
+  cursor: url('https://i.imgur.com/fHyEMsl.png'), auto; /* Funny cursor */
+}
+
+@media (max-width: 800px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  color: #fff;
+  background: linear-gradient(45deg, #f39c12, #8e44ad, #3498db, #e74c3c);
+  background-size: 300% 300%;
+  animation: bgShift 8s infinite ease-in-out;
+}
+
+@keyframes bgShift {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+/* Section Styling */
+.section-box {
+  padding: 2rem;
+  margin: 2rem auto;
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  width: 40%;
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+#homepage {
+  text-align: center;
+}
+
+#welcome-message {
+  font-size: 1.5rem;
+  color: #ffea00;
+  margin-top: 1rem;
+}
+
+#aboutus,
+#whitepaper,
+#roadmap,
+#community,
+#team {
+  color: #fff;
+  text-align: center;
+}
+
+#aboutus h2,
+#whitepaper h2,
+#roadmap h2,
+#community h2,
+#team h2 {
+  color: #ffea00;
+}
+
+#roadmap ul {
+  list-style: none;
+  padding: 0;
+}
+
+#roadmap ul li {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+
+/* Video Styling */
+.video-container {
+  width: 10%;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.video {
+  border-radius: 30%;
+  display: block;
+  margin: 0 auto;
+  object-fit: cover;
+}
+
+/* Team Section */
+#team .team-member {
+  margin: 1rem 0;
+}
+
+#team .team-member h3 {
+  color: #ff7675;
+}
+
+/* Buttons */
+#menucontainer {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.featurebutton {
+  background: linear-gradient(45deg, #ff7675, #fd79a8);
+  border: 2px solid black;
+  border-radius: 15px;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 1rem 2rem;
+  animation: buttonPop 2s infinite ease-in-out;
+  cursor: pointer;
+}
+
+@keyframes buttonPop {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+.featurebutton:hover {
+  background: linear-gradient(45deg, #fd79a8, #ff7675);
+  box-shadow: 0px 0px 10px yellow;
+}
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
